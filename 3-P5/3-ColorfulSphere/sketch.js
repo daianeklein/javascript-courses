@@ -6,13 +6,12 @@ function setup() {
 
     createCanvas(canvasWidth, canvasHeight, WEBGL);
     e1 = new Sphere(0, 0, 200);
-    e2 = new Sphere(100, 130, 150);
+    e2 = new Sphere(100, 100, 50);
 }
 
 function draw() {
     background(25);
     e1.displaySphere();
-
     e2.displaySphere();
 }
 
@@ -23,14 +22,22 @@ function Sphere(x, y, radius) {
 
     this.displaySphere = function() {
         push();
-        const c = color(255, 204, 5);
-        fill(c)
-        noStroke();
-
         this.MoveSphere();
         this.RotateSphere();
-        
-        ellipse(this.x, this.y, this.radius, this.radius);
+
+        for (let i = 0; i < 360; i++) {
+            // colors
+            let color1 = map(sin(i + frameCount), -1, 1, 200, 50);
+            let color2 = map(sin(i + frameCount), -1, 1, 200, 200);
+            let color3 = map(sin(i + frameCount), -1, 1, 200, 200);
+
+            stroke(color1, color2, color3);
+
+            push();
+            rotateY(i * 0.5); // rotate by 180 degrees over 360 iterations
+            ellipse(this.x, this.y, this.radius, this.radius);
+            pop();
+        }
 
         pop();
     }
