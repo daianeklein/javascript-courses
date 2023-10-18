@@ -6,7 +6,7 @@ function setup() {
 
     createCanvas(canvasWidth, canvasHeight, WEBGL);
     e1 = new Sphere(0, 0, 200);
-    e2 = new Sphere(100, 100, 50);
+    e2 = new Sphere(100, 100, 20);
 }
 
 function draw() {
