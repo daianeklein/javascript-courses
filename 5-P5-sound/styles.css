@@ -1,21 +1,40 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
     overflow: hidden; 
     display: flex;         
     flex-direction: column; 
     height: 100vh;   
-    background-color: red; /*testing     
+    background-color: rgb(148, 205, 255);
 }
 
-#globeContainer {
-    flex: 1;           
-    position: relative; 
-    z-index: 1;  /* ensure this container is above the canvas */
 
+.countries, .mundi-map {
+    flex: 1; 
+    border: 1px solid black; /* temporary border to visualize the sections */
+    background-color: aquamarine;
 }
 
-#topContainer {
+
+#countries-list, #countries-map {
+    height: 100%; 
+    border: 1px solid black; /* temporary border to visualize the sections */
+}
+
+.countries {
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+}
+
+.half {
+    flex: 1;  /* equally divide the space between the two child divs */
+    border: 1px solid black;  /* temporary border to visualize the division */
+    height: 100%;  /* make them fill their parent's height */
+    background-color: blueviolet;
+}
+
+/* #topContainer {
     display: flex;     
     flex: 1;           
 }
@@ -37,3 +56,11 @@ body, html {
     top: 100px;
     left: 81px;
 }
+
+#sound-slider{
+    position: absolute;
+}
+
+#rate-slider{
+    position: absolute;
+} */
