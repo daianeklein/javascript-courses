@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    display: flex;         
+    flex-direction: column; 
+    height: 100vh;   
+    background-color: red; /*testing     
+}
+
+#globeContainer {
+    flex: 1;           
+    position: relative; 
+    z-index: 1;  /* ensure this container is above the canvas */
+
+}
+
+#topContainer {
+    display: flex;     
+    flex: 1;           
+}
+
+#topLeft {
+    flex: 1;           
+    background-color: rgb(195, 255, 0);
+}
+
+#topRight {
+    flex: 1;          
+    background-color: green;
+}
+
+#play-bottom {
+    position: absolute;
+    flex: 1;
+    background-color: blue;
+    top: 100px;
+    left: 81px;
+}

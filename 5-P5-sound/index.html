@@ -18,27 +18,34 @@
     <script src="visualisations.js"></script>
 
 </head>
-<body>
-    <!-- Add a new div for the globe -->
-    <div id="globeContainer"></div>
-    
-    <!-- Existing select dropdown -->
-    <select id="countrySelect">
-        <option value="usa">USA</option>
-        <option value="canada">Canada</option>
-    </select>
-    
-    <!-- Add styles to position the globe div -->
-    <style>
-        #globeContainer {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    </style>
-</body>
-    
-</body>
+    <body>
+        <div id="globeContainer">
+            <div id="topContainer">
+                <div id="topLeft"></div>
+                <div id="topRight"></div>
+            </div>
+        <div id="sound-slider"></div>
+        <div id="rate-slider"></div>
+        <div id="play-bottom"></div>
+        </div>
+        
+        <!-- Existing select dropdown -->
+        <select id="countrySelect">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+        </select>
+        
+        <!-- Add styles to position the globe div -->
+        <style>
+            #globeContainer {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        </style>
+        
+    </body>
+
 </html>
 
 
