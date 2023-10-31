@@ -1,66 +1,48 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden; 
-    display: flex;         
-    flex-direction: column; 
-    height: 100vh;   
-    background-color: rgb(148, 205, 255);
-}
-
-
-.countries, .mundi-map {
-    flex: 1; 
-    border: 1px solid black; /* temporary border to visualize the sections */
-    background-color: aquamarine;
-}
-
-
-#countries-list, #countries-map {
-    height: 100%; 
-    border: 1px solid black; /* temporary border to visualize the sections */
-}
-
-.countries {
     display: flex;
     flex-direction: row;
-    background-color: bisque;
+    height: 100vh;
+    width: 100vw;
 }
 
-.half {
-    flex: 1;  /* equally divide the space between the two child divs */
-    border: 1px solid black;  /* temporary border to visualize the division */
-    height: 100%;  /* make them fill their parent's height */
-    background-color: blueviolet;
+canvas {
+    display: block; /* This ensures the canvas doesn't behave like an inline element */
 }
 
-/* #topContainer {
-    display: flex;     
-    flex: 1;           
+#left {
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;  /* 40% of the body's width */
 }
 
+#right {
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;  /* 60% of the body's width */
+}
+
+/* Top left section */
 #topLeft {
-    flex: 1;           
-    background-color: rgb(195, 255, 0);
+    flex: 2; /* Double the height of the bottom left section */
+    background-color: #00999e; /* Teal color from your image */
 }
 
+/* Bottom left section */
+#bottomLeft {
+    flex: 1; 
+    background-color: #ffb447; /* Orange color from your image */
+}
+
+/* Top right section */
 #topRight {
-    flex: 1;          
-    background-color: green;
+    flex: 2; /* Double the height of the bottom right section */
+    background-color: #ffc6d6; /* Pink color from your image */
 }
 
-#play-bottom {
-    position: absolute;
-    flex: 1;
-    background-color: blue;
-    top: 100px;
-    left: 81px;
+/* Bottom right section */
+#bottomRight {
+    flex: 1; 
+    background-color: #9078aa; /* Lavender color from your image */
 }
-
-#sound-slider{
-    position: absolute;
-}
-
-#rate-slider{
-    position: absolute;
-} */

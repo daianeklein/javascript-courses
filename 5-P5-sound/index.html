@@ -5,71 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script> 
-    <script src="sketch.js"></script>
 
     <title>Music Visualizer</title>
 
 </head>
 <body>
+    <div id="left">
+        <div id="topLeft"></div>
+        <div id="bottomLeft"></div>
+    </div>
+    <div id="right">
+        <div id="topRight"></div>
+        <div id="bottomRight"></div>
+    </div>
 
-    <!---- Countries Section -->
-    <section class="countries">
-        <div class="half" id="left-side"></div>
-        <div class="half" id="right-side"></div>
-    </section>
-    
-    <!---- Countries Section -->
-    <section class="mundi-map">
-        <div id="countries-map"></div>
-
-    </section>
-
-    <!---- Music visualizer -->
-    <section>
-
-    </section>
-
-    <!---- Sounds button -->
-    <section>
-
-    </section>
-
+    <!-- Correct order of scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script> 
+    <script src="sketch.js"></script>
 </body>
+
 </html>
-
-
-
-    <!----
-
-    <div id="globeContainer">
-            <div id="topContainer">
-                <div id="topLeft"></div>
-                <div id="topRight"></div>
-            </div>
-        <div id="sound-slider"></div>
-        <div id="rate-slider"></div>
-        <div id="play-bottom"></div>
-        </div>
-        
- Existing select dropdown 
-        <select id="countrySelect">
-            <option value="usa">USA</option>
-            <option value="canada">Canada</option>
-        </select>
-        
-        <!-- Add styles to position the globe div -->
-        <style>
-            #globeContainer {
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-        </style>
-        
-    </body>
-
-</html> -->
 
 
